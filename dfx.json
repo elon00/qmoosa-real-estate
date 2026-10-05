@@ -1,0 +1,38 @@
+{
+  "canisters": {
+    "qmoosa_core": {
+      "main": "canisters/qmoosa_core/main.mo",
+      "type": "motoko"
+    },
+    "x402_bazaar": {
+      "main": "canisters/x402_bazaar/bazaar.mo",
+      "type": "motoko"
+    },
+    "caffeine_engine": {
+      "main": "canisters/caffeine_engine/agent.mo",
+      "type": "motoko"
+    },
+    "qmoosa_frontend": {
+      "dependencies": [
+        "qmoosa_core",
+        "x402_bazaar",
+        "caffeine_engine"
+      ],
+      "frontend": {
+        "entrypoint": "dist/index.html"
+      },
+      "source": [
+        "dist"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
