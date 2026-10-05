@@ -111,8 +111,8 @@ qmoosa/
 
 ### 1. Installation
 ```bash
-git clone https://github.com/marti/qmoosa.git
-cd qmoosa
+git clone https://github.com/elon00/qmoosa-real-estate.git
+cd qmoosa-real-estate
 npm install
 ```
 
