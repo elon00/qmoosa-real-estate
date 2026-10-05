@@ -1,6 +1,6 @@
 import React from 'react';
 import type { ConnectedWallet, Currency } from '../types';
-import { Building2, Bot, Layers, Network, Wallet, TrendingUp, Cpu } from 'lucide-react';
+import { Building2, Bot, Layers, Network, Wallet, TrendingUp, Cpu, Info } from 'lucide-react';
 
 interface HeaderProps {
   activeTab: string;
@@ -9,6 +9,7 @@ interface HeaderProps {
   setCurrency: (c: Currency) => void;
   wallet: ConnectedWallet | null;
   onOpenWalletModal: () => void;
+  onOpenAboutModal: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -17,7 +18,8 @@ export const Header: React.FC<HeaderProps> = ({
   currency,
   setCurrency,
   wallet,
-  onOpenWalletModal
+  onOpenWalletModal,
+  onOpenAboutModal
 }) => {
   return (
     <header className="sticky top-0 z-40 w-full bg-slate-950/85 backdrop-blur-md border-b border-slate-800">
@@ -37,10 +39,18 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           <div className="flex items-center gap-3">
+            <button
+              onClick={onOpenAboutModal}
+              className="text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1 transition"
+            >
+              <Info className="w-3.5 h-3.5" />
+              <span>About Protocol</span>
+            </button>
+            <span className="text-slate-500">|</span>
             <span className="hidden sm:inline text-amber-400/90 font-medium">
               🇮🇳 Target: Indian Real Estate (RERA & Vastu Verified)
             </span>
-            <span className="text-slate-500">|</span>
+            <span className="hidden sm:inline text-slate-500">|</span>
             <span className="text-emerald-400 font-mono text-[10px]">
               Reverse Gas: Zero User Fees
             </span>

@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { PropertyCard } from './components/PropertyCard';
 import { PropertyDetailModal } from './components/PropertyDetailModal';
 import { MultiWalletModal } from './components/MultiWalletModal';
+import { AboutModal } from './components/AboutModal';
 import { MultiAgentChat } from './components/MultiAgentChat';
 import { X402BazaarTerminal } from './components/X402BazaarTerminal';
 import { ConwayAutomatonSim } from './components/ConwayAutomatonSim';
@@ -28,6 +29,7 @@ export function App() {
   });
 
   const [isWalletModalOpen, setIsWalletModalOpen] = useState<boolean>(false);
+  const [isAboutModalOpen, setIsAboutModalOpen] = useState<boolean>(false);
   const [selectedProperty, setSelectedProperty] = useState<Property | null>(null);
   const [bazaarProperty, setBazaarProperty] = useState<Property | null>(null);
 
@@ -145,6 +147,7 @@ export function App() {
         setCurrency={setCurrency}
         wallet={wallet}
         onOpenWalletModal={() => setIsWalletModalOpen(true)}
+        onOpenAboutModal={() => setIsAboutModalOpen(true)}
       />
 
       {/* Main Content Area */}
@@ -324,6 +327,12 @@ export function App() {
         onAddFaucetFunds={handleAddFaucetFunds}
       />
 
+      {/* About Qmoosa Protocol Modal */}
+      <AboutModal
+        isOpen={isAboutModalOpen}
+        onClose={() => setIsAboutModalOpen(false)}
+      />
+
       {/* Footer */}
       <footer className="mt-12 border-t border-slate-900 bg-slate-950 py-8 text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -335,6 +344,13 @@ export function App() {
           </div>
 
           <div className="flex items-center gap-4 text-slate-400">
+            <button
+              onClick={() => setIsAboutModalOpen(true)}
+              className="hover:text-cyan-400 transition underline underline-offset-4"
+            >
+              About Protocol
+            </button>
+            <span>•</span>
             <span>RERA Compliant</span>
             <span>•</span>
             <span>x402 Bazaar Protocol</span>
