@@ -1,0 +1,125 @@
+{
+  "engine": "REA_Reverse_Engineer_Anything",
+  "status": "STRUCTURE_RECONSTRUCTED",
+  "analyzed_files": 39,
+  "manifest": {
+    "dfx.json": {
+      "bytes": 764
+    },
+    "index.html": {
+      "bytes": 371
+    },
+    "package-lock.json": {
+      "bytes": 71844
+    },
+    "package.json": {
+      "bytes": 720
+    },
+    "README.md": {
+      "bytes": 17736
+    },
+    "tsconfig.app.json": {
+      "bytes": 681
+    },
+    "tsconfig.json": {
+      "bytes": 126
+    },
+    "tsconfig.node.json": {
+      "bytes": 581
+    },
+    "vite.config.ts": {
+      "bytes": 244
+    },
+    "public\\favicon.svg": {
+      "bytes": 9522
+    },
+    "public\\icons.svg": {
+      "bytes": 5055
+    },
+    "scripts\\rea_inspector.py": {
+      "bytes": 1485
+    },
+    "scripts\\rsi_engine.py": {
+      "bytes": 2039
+    },
+    "src\\App.css": {
+      "bytes": 3075
+    },
+    "src\\App.tsx": {
+      "bytes": 15336
+    },
+    "src\\index.css": {
+      "bytes": 1540
+    },
+    "src\\main.tsx": {
+      "bytes": 240
+    },
+    "tests\\reality_check_harness.py": {
+      "bytes": 1250
+    },
+    ".github\\workflows\\ci.yml": {
+      "bytes": 730
+    },
+    ".github\\workflows\\qmoosa-rsi-rea-sync.yml": {
+      "bytes": 531
+    },
+    "canisters\\caffeine_engine\\agent.mo": {
+      "bytes": 1565
+    },
+    "canisters\\qmoosa_core\\main.mo": {
+      "bytes": 3900
+    },
+    "canisters\\x402_bazaar\\bazaar.mo": {
+      "bytes": 2883
+    },
+    "src\\assets\\hero.png": {
+      "bytes": 13057
+    },
+    "src\\assets\\react.svg": {
+      "bytes": 4126
+    },
+    "src\\assets\\vite.svg": {
+      "bytes": 8710
+    },
+    "src\\components\\AboutModal.tsx": {
+      "bytes": 10183
+    },
+    "src\\components\\CaffeineAiStudio.tsx": {
+      "bytes": 16925
+    },
+    "src\\components\\ConwayAutomatonSim.tsx": {
+      "bytes": 19734
+    },
+    "src\\components\\EscrowPortfolio.tsx": {
+      "bytes": 8171
+    },
+    "src\\components\\Header.tsx": {
+      "bytes": 10251
+    },
+    "src\\components\\MultiAgentChat.tsx": {
+      "bytes": 18280
+    },
+    "src\\components\\MultiWalletModal.tsx": {
+      "bytes": 16665
+    },
+    "src\\components\\PropertyCard.tsx": {
+      "bytes": 8611
+    },
+    "src\\components\\PropertyDetailModal.tsx": {
+      "bytes": 20787
+    },
+    "src\\components\\X402BazaarTerminal.tsx": {
+      "bytes": 16620
+    },
+    "src\\data\\properties.ts": {
+      "bytes": 11102
+    },
+    "src\\services\\caffeineIcp.ts": {
+      "bytes": 3892
+    },
+    "src\\types\\index.ts": {
+      "bytes": 2852
+    }
+  },
+  "timestamp": 1794024814
+}
