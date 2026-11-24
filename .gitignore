@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Lean 4 build artifacts
+lean_verify/.lake/
